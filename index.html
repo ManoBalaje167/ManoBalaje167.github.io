@@ -1,0 +1,944 @@
+<html>
+<head>
+    <title>SSN TROPHY</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="nav">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="trophy.png" style="width:30px; height:50px"></a>
+                <a class="navbar-brand" href="#"><img src="./SSN.svg" style="width:67px; height:50px; float:right;"></a>
+                
+                <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                    <span class="navbar-toggler-icon">
+                        
+                    </span>
+                </button>
+            
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-lg-auto">
+                    <li class="nav-item">
+                    <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#about">About us</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#games">Games</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#rules">Rules</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#venue">Venue</a>
+                    </li>
+                    
+                        
+                    
+                </ul>
+                </div>
+            </div>
+          </nav>
+    </header>
+    <div class="jumbotron jumbotron-fluid height100p banner" id="home">
+        <div class="container h100">
+            <div class="contentBox h100">
+                <div>
+                <div class="animated bounceInLeft">
+                    <img src="hcl.png" alt="Hcl logo" width="250" height="49">
+                    <h4>presents</h4>
+                </div>
+                
+                <div class="animated bounceInRight">
+               
+                <h1 >SSN TROPHY</h1>
+                <h3>Feb 24-27</h3>
+                <p id="demo"></p>
+                <script>
+                // Set the date we're counting down to
+                var countDownDate = new Date("feb 24, 2020 09:30:00").getTime();
+
+                // Update the count down every 1 second
+                var x = setInterval(function() {
+
+                // Get today's date and time
+                var now = new Date().getTime();
+    
+                // Find the distance between now and the count down date
+                var distance = countDownDate - now;
+                    
+                // Time calculations for days, hours, minutes and seconds
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+                // Output the result in an element with id="demo"
+                document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+                + minutes + "m " + seconds + "s ";
+    
+                // If the count down is over, write some text 
+                if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("demo").innerHTML = "EXPIRED";
+                }
+                }, 1000);
+                </script>
+
+            </div>
+        </div>
+            </div>
+        </div>
+    </div>
+    
+    <section class="sec1" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="offset-sm-2 col-sm-8">
+                    <div class="headerText text-center">
+                            <h2>SSN COLLEGE OF ENGINEERING</h2>
+                            <p style="text-align:justify">Sri Sivasubramaniya Nadar College of Engineering (SSNCE) is the outcome of the vision and initiative of Dr. Shiv Nadar, Chairman, HCL Technologies and a pioneer in the field of Information Technology. The Institution stands out as a premier center of higher learning with a mission of pursuing excellence in education and research.
+                                <span id="dots"></span><span id="more"> SSN institutions, with its diverse and dynamic community of students offer a distinctive combination of some of the finest undergraduate, postgraduate and research programmes. The campus has been interconnected through wired as well as wireless (Wi-Fi) Network. In addition, online access is provided to reference books and journals. SSN has been consistently proving its class by retaining the top position among Anna University affiliated Engineering Colleges in Tamilnadu.</span></p>
+                            <button onclick="myFunction1()" id="myBtn">Read more</button>
+                            <script>
+                                function myFunction1() {
+                                  var dots = document.getElementById("dots");
+                                  var moreText = document.getElementById("more");
+                                  var btnText = document.getElementById("myBtn");
+                                
+                                  if (dots.style.display === "none") {
+                                    dots.style.display = "inline";
+                                    btnText.innerHTML = "Read more"; 
+                                    moreText.style.display = "none";
+                                  } else {
+                                    dots.style.display = "none";
+                                    btnText.innerHTML = "Read less"; 
+                                    moreText.style.display = "inline";
+                                  }
+                                }
+                                </script>
+                                
+                     </div>
+                    
+                </div>
+
+            </div>
+            <div class="flexc">
+
+                <div class="">
+                    <div class="">
+                        <img class="imgf" src="./shiv.svg" alt="Dr. Shiv Nadar" scale="0">
+                    </div>
+                    <div class="textf">
+                        <h5 class="">Dr. Shiv Nadar</h5>
+                        Founder &amp; Chairman
+                        <p><strong>HCL, Shiv Nadar Foundation</strong></p>
+
+                    </div> <!-- .et_pb_team_member_description -->
+                </div> <!-- .et_pb_team_member -->
+
+
+                <div class="">
+                    <div class="">
+                        <img class="imgf" src="./kala.svg" alt="Ms. Kala Vijayakumar" scale="0">
+                    </div>
+                    <div class="textf">
+                        <h5 class="">Ms. Kala Vijayakumar</h5>
+                        President
+                        <p><strong>SSN Institutions</strong></p>
+
+                    </div> <!-- .et_pb_team_member_description -->
+                </div>
+                <div class="">
+                    <div class="">
+                        <img class="imgf" src="./sali.svg" alt="Dr. S. Salivahanan" scale="0">
+                    </div>
+                    <div class="textf">
+                        <h5 class="">Dr. S. Salivahanan</h5>
+                        Principal
+                        <p><strong>SSN College of Engineering</strong></p>
+
+                    </div>
+                </div>
+            </div>
+                <div class="row">
+                    <div class="offset-sm-2 col-sm-8">
+                        <div class="headerText text-center">
+                                <h2 style="text-align: center;">SSN TROPHY</h2>
+                                <p style="text-align: center; text-align: justify; ">SSN trophy is the national level inter collegiate sports festival proudly organised by SSN College of Engineering for the past  17 years. An annual 4 day event, SSN trophy was first held in the year 2003 with  participants competing in Basketball, Badminton and Table Tennis. Since then SSN Trophy has grown manifold and has become one of the most desired and appreciated sporting events across the country.
+                                </p><span id="dots1"></span>
+                                
+                                <span id="more1">
+                                    <div style="">
+                                        <ul id="list" class="rule_game">
+                                            <li>SSN trophy has a footfall over 1000 participants</li>
+                                            <li>50+ Institutions from over 5 states across India</li>
+                                            <li>13 events conducted across 8 sports</li>
+                                            <li>Cash Prizes and Awards worth Rs. 5 Lakhs</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    
+                                    
+                                    
+                                   <p style="text-align: justify;"> Over the years the Opening and closing ceremonies have been graced by various Indian Sportspersons such as Mr.Sharath Kamal, Mr.John Wright, Ms.Anita Paul, Shri.Robin Singh.We would proudly say that SSN Trophy has been a stepping stone for many currently successful sportspersons from other colleges have participated in SSN Trophy on their way to professional glory.
+This edition of the SSN Trophy is the edition and it is more special because it is the first year of the decade, we hope that it reaches a whole new level of grandeur, competition and excellence in sports.
+                                    
+                                </p></span>
+                                <button onclick="myFunction2()" id="myBtn1">Read more</button>
+                            <script>
+                                function myFunction2() {
+                                  var dots = document.getElementById("dots1");
+                                  var moreText = document.getElementById("more1");
+                                  var btnText = document.getElementById("myBtn1");
+                                  var lis=document.getElementById("list");
+                                
+                                  if (dots.style.display === "none") {
+                                    dots.style.display = "inline";
+                                    btnText.innerHTML = "Read more"; 
+                                    moreText.style.display = "none";
+                                    lis.style.display = "none";
+                                  } else {
+                                    dots.style.display = "none";
+                                    btnText.innerHTML = "Read less"; 
+                                    moreText.style.display = "inline";
+                                    lis.style.display = "inline";
+                                  }
+                                }
+                            </script>
+                        </div>
+                        
+                    </div>
+    
+                </div>
+                <div class="flexc">
+
+                    <div class="">
+                        <div class="">
+                            <img class="imgf" src="./shiv.svg" alt="Dr. Shiv Nadar" scale="0">
+                        </div>
+                        <div class="textf">
+                            <h5 class="">Dr. Shiv Nadar</h5>
+                            Founder &amp; Chairman
+                            <p><strong>HCL, Shiv Nadar Foundation</strong></p>
+    
+                        </div> <!-- .et_pb_team_member_description -->
+                    </div> <!-- .et_pb_team_member -->
+    
+    
+                    <div class="">
+                        <div class="">
+                            <img class="imgf" src="./kala.svg" alt="Ms. Kala Vijayakumar" scale="0">
+                        </div>
+                        <div class="textf">
+                            <h5 class="">Ms. Kala Vijayakumar</h5>
+                            President
+                            <p><strong>SSN Institutions</strong></p>
+    
+                        </div> <!-- .et_pb_team_member_description -->
+                    </div>
+                    <div class="">
+                        <div class="">
+                            <img class="imgf" src="./sali.svg" alt="Dr. S. Salivahanan" scale="0">
+                        </div>
+                        <div class="textf">
+                            <h5 class="">Dr. S. Salivahanan</h5>
+                            Principal
+                            <p><strong>SSN College of Engineering</strong></p>
+    
+                        </div>
+                    </div>
+                </div>
+            
+        </div>
+        <hr style="color: whitesmoke !important;" >
+    </section>
+    <section class="text-center sec1" id="games">
+        <div class="container ">
+            <div class="row">
+                <div class="offset-sm-2 col-sm-8">
+                    <div class="headerText text-center">
+                        <h2>GAMES</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="blogPost" >
+                        <div class="imgBx" >
+                            <img src="basketball.png" class="img-fluid img-1">
+                            
+                            <div class="content">
+                                <h1 style="color: whitesmoke;">Basket Ball</h1>
+                                
+                            </div>
+                        </div>
+                        <button data-toggle="modal" data-target="#ruleb" class="btn btn-primary">Details</button>
+                            <div  class="modal fade" id="ruleb">
+                                <div class="modal-dialog modal-lg modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h3 >Basket Ball</h3>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="card card-body">
+                                            <ol class="rule_game rules1">
+                                                <li>The team can consist of 12 players maximum.</li>
+                                                <li>The matches will be played in four quarters (10-2-10-5-10-2-10</li>
+                                                <li>Entry  fee : Men -Rs.2000  Women- Rs. 1000  </li>
+                                            </ol>
+                                        </div>
+                                             
+                                                <div class="card card-body">
+                                                    <p>
+                                                        <strong>Boys Incharge : </strong>
+                                                        Mathesh
+                                                        <br>
+                                                        <strong>Contact No :</strong>
+                                                        <a href="tel:+917708902732">7708902732</a>
+                        
+                                                    </p>
+                                                 </div>
+                                                 <div class="card card-body">
+                                                    <p>
+                                                        <strong>Girls Incharge : </strong>
+                                                       Sanjana Ganesh
+                                                        <br>
+                                                        <strong>Contact No :</strong>
+                                                        <a href="tel:+917358015635">7358015635</a>
+                        
+                                                    </p>
+                                                 </div>
+                                             
+                                             
+
+                                        </div>
+                                        <div class="modal-footer">
+                                            
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                          </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        
+                            
+                                                    
+                    
+                    </div>
+                    
+                </div>
+                <div class="col-sm-6">
+                    <div class="blogPost">
+                        <div class="imgBx">
+                            <img src="tennis.png" class="img-fluid img-1">
+                        </div>
+                            <div class="content">
+                                <h1 style="color: whitesmoke;">Tennis</h1>
+        
+                            </div>
+                            <button data-toggle="modal" data-target="#rulec" class="btn btn-primary">Details</button>
+                            <div  class="modal fade" id="rulec">
+                                <div class="modal-dialog modal-lg modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h3>Tennis</h3>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="card card-body">
+
+                                        
+                                            <ol class="rule_game rules1">
+                                                <li>The team can consist of 4 players maximum.</li>
+                                                <li>Each match consists of 1 singles, 1 doubles and a reverse singles.</li>
+                                                <li>Entry  fee : Men -Rs.1000  Women - Rs. 500</li>
+
+                                            </ol>
+                                            </div>
+
+                                            <div class="card card-body">
+                                                <p>
+                                                    <strong>Boys Incharge : </strong>
+                                                    Ashwin Dhanasamy
+                                                    <br>
+                                                    <strong>Contact No :</strong>
+                                                    <a href="tel:+919003093381">9003093381</a>
+                    
+                                                </p>
+                                             </div>
+                                             <div class="card card-body">
+                                                <p>
+                                                    <strong>Girls Incharge : </strong>
+                                                   Kaaviya Shri
+                                                    <br>
+                                                    <strong>Contact No :</strong>
+                                                    <a href="tel:+916384665145">6384665145</a>
+                    
+                                                </p>
+                                             </div>
+
+                                        </div>
+                                        <div class="modal-footer">
+                                            
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                          </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        
+                              
+                    
+                            
+                    
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="blogPost">
+                        <div class="imgBx">
+                            <img src="cricket.png" class="img-fluid img-1">
+                        </div>
+                        <div class="content">
+                            <h1 style="color: whitesmoke;">Cricket</h1>
+                        </div>
+                    
+                            <button data-toggle="modal" data-target="#rulecr" class="btn btn-primary">Details</button>
+                            <div  class="modal fade" id="rulecr">
+                                <div class="modal-dialog modal-lg modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h3>Cricket</h3>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="card card-body"> 
+                                            <ol class="rule_game rules1">
+                                                <li>The team can consist of 15 players maximum.</li>
+                                                <li>Entries for only 12 teams and a T-20 format.</li>
+                                                <li>Entry  fee : Rs.4000   </li>
+
+                                            </ol>
+
+                                            
+                                        </div>
+
+
+                                            <div class="card card-body">
+                                                <p>
+                                                    <strong>Boys Incharge : </strong>
+                                                    Ashwin C
+                                                    <br>
+                                                    <strong>Contact No :</strong>
+                                                    <a href="tel:+919840413437">9840413437</a>
+                    
+                                                </p>
+                                             </div>
+
+
+                                        </div>
+                                        <div class="modal-footer">
+                                            
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                          </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        
+                        
+                    </div>
+                </div>
+            
+
+               
+                <div class="col-sm-6">
+                    <div class="blogPost">
+                        <div class="imgBx">
+                            <img src="chess.png" class="img-fluid img-1">
+                        </div>
+                        <div class="content">
+                            <h1 style="color: whitesmoke;">Chess</h1>
+                        </div>
+                        
+                            <button data-toggle="modal" data-target="#rulech" class="btn btn-primary">Details</button>
+                            <div  class="modal fade" id="rulech">
+                                <div class="modal-dialog modal-lg modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h3>Chess</h3>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                                        </div>
+                                        <div class="modal-body">
+                                        <div class="card card-body">
+                                            <ol class="rule_game rules1">
+                                                <li>The team can consist of 6 players maximum.</li>
+                                                <li>The matches will be played under swiss system.</li>
+                                                <li>Each round will be for 2 hours. 1 hour for each player. </li>
+                                                <li>Entry  fee : Rs. 1000  </li>
+
+                                            </ol>
+                                        </div>
+
+
+
+                                            <div class="card card-body">
+                                                <p>
+                                                    <strong>Boys Incharge : </strong>
+                                                    Aadithya Jagadeshan
+                                                    <br>
+                                                    <strong>Contact No :</strong>
+                                                    <a href="tel:+919840323164">9840323164</a>
+                    
+                                                </p>
+                                             </div>
+                                             <div class="card card-body">
+                                                <p>
+                                                    <strong>Girls Incharge : </strong>
+                                                    Amrutha
+                                                    <br>
+                                                    <strong>Contact No :</strong>
+                                                    <a href="tel:+917305849774">7305849774</a>
+                    
+                                                </p>
+                                             </div>
+
+                                        </div>
+                                        <div class="modal-footer">
+                                            
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                          </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+            
+            
+            
+                <div class="col-sm-6">
+                    <div class="blogPost">
+                        <div class="imgBx">
+                            <img src="football.png" class="img-fluid img-1">
+                        </div>
+                        <div class="content">
+                            <h1 style="color: whitesmoke;">Football</h1>
+                        </div>
+                            
+                            <button data-toggle="modal" data-target="#rulef" class="btn btn-primary">Details</button>
+                            <div  class="modal fade" id="rulef">
+                                <div class="modal-dialog modal-lg modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h3>Football</h3>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                                        </div>
+                                        <div class="modal-body">
+                                            <div  class="card card-body">
+                                            <ol class="rule_game rules1">
+                                                <li>Matches will be conducted on league cum knock out basis.</li>
+                                                <li>Maximum of 16 players in a team.</li>
+                                                <li>Durations for the matches will be 20-5-20 for league stages and 30-10-30 for knockout stages. </li>
+                                                <li>Entry  fee : Rs.2000  </li>
+
+                                            </ol>
+                                            </div>
+
+                                            <div class="card card-body">
+                                                <p>
+                                                    <strong>Boys Incharge : </strong>
+                                                    Hashwanth
+                                                    <br>
+                                                    <strong>Contact No :</strong>
+                                                    <a href="tel:+918939075445">8939075445</a>
+                    
+                                                </p>
+                                             </div>
+
+                                            
+
+                                        </div>
+                                        <div class="modal-footer">
+                                            
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                          </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="col-sm-6">
+                    <div class="blogPost">
+                        <div class="imgBx">
+                            <img src="badminton.png" class="img-fluid img-1">
+                        </div>
+                        <div class="content">
+                            <h1 style="color: whitesmoke;">Badminton</h1>
+                        </div>
+                            
+                            
+
+                            <button data-toggle="modal" data-target="#ruleba" class="btn btn-primary">Details</button>
+                            <div  class="modal fade" id="ruleba">
+                                <div class="modal-dialog modal-lg modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h3>Badminton</h3>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                                        </div>
+                                        <div class="modal-body">
+                                            <div  class="card card-body">
+                                            <ol class="rule_game rules1">
+                                                <li>The team can consist of 5 players max for men and 4 players max for women.</li>
+                                                <li>Each match consist of three singles and two doubles for men and 2 singles and 1 doubles for women.</li>
+                                                <li>Entry  fee : Men -Rs.2000  Women- Rs. 1000  </li>
+                                                
+
+                                            </ol>
+                                            </div>
+
+
+                                            <div class="card card-body">
+                                                <p>
+                                                    <strong>Boys Incharge : </strong>
+                                                    Vignesh 
+                                                    <br>
+                                                    <strong>Contact No :</strong>
+                                                    <a href="tel:+919047839268">9047839268</a>
+                    
+                                                </p>
+                                             </div>
+                                             <div class="card card-body">
+                                                <p>
+                                                    <strong>Girls Incharge : </strong>
+                                                    Priyadharshini
+                                                    <br>
+                                                    <strong>Contact No :</strong>
+                                                    <a href="tel:+919600283883">9600283883</a>
+                    
+                                                </p>
+                                             </div>
+
+                                        </div>
+
+
+                                        
+                                        <div class="modal-footer">
+                                        
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div  class="col-sm-6">
+                    <div class="blogPost">
+                        <div class="imgBx">
+                            <img src="tabletennis.png" class="img-fluid img-1">
+                        </div>
+                        <div class="content">
+                            <h1 style="color: whitesmoke;">Table Tennis</h1>
+                        </div>
+                            
+                            <button data-toggle="modal" data-target="#rulett" class="btn btn-primary">Details</button>
+                            <div  class="modal fade" id="rulett">
+                                <div class="modal-dialog modal-lg modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h3>Table Tennis</h3>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="card card-body">
+                                            <ol class="rule_game rules1">
+                                                <li>The team can consist of 4 players maximum.</li>
+                                                <li>Each match consist of 2 singles,1 doubles and 2 reverse singles.</li>
+                                                <li>Entry  fee : Men -Rs.1000  Women- Rs. 500   </li>
+                                                
+
+                                            </ol>
+                                            </div>
+
+                                            <div class="card card-body">
+                                                <p>
+                                                    <strong>Boys Incharge : </strong>
+                                                    Harish Kumar
+                                                    <br>
+                                                    <strong>Contact No :</strong>
+                                                    <a href="tel:+917598878858">7598878858</a>
+                    
+                                                </p>
+                                             </div>
+                                             <div class="card card-body">
+                                                <p>
+                                                    <strong>Girls Incharge : </strong>
+                                                    Laasya
+                                                    <br>
+                                                    <strong>Contact No :</strong>
+                                                    <a href="tel:+919110771416">9110771416</a>
+                    
+                                                </p>
+                                             </div>
+
+                                        </div>
+                                        <div class="modal-footer">
+                                            
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                          </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div  class="col-sm-6">
+                    <div  class="blogPost">
+                        <div class="imgBx">
+                            <img src="squash.png" class="img-fluid img-1">
+                        </div>
+                        <div class="content">
+                            <h1 style="color: whitesmoke;">Squash</h1>
+                        </div>
+                            
+                            <button data-toggle="modal" data-target="#rulesq" class="btn btn-primary">Details</button>
+                            <div  class="modal fade" id="rulesq">
+                                <div class="modal-dialog modal-lg modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h3>Squash</h3>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="card card-body">
+                                            <ol class="rule_game rules1">
+                                                <li>Individual event for men and women.</li>
+                                                <li>Entry  fee : Men -Rs.300  Women- Rs. 200  </li>
+                                                
+                                                
+
+                                            </ol>
+                                            </div>
+
+
+                                            <div class="card card-body">
+                                                <p>
+                                                    <strong>Boys Incharge : </strong>
+                                                    Barath P
+                                                    <br>
+                                                    <strong>Contact No :</strong>
+                                                    <a href="tel:+919655355237">9655355237</a>
+                    
+                                                </p>
+                                             </div>
+                                             <div class="card card-body">
+                                                <p>
+                                                    <strong>Girls Incharge : </strong>
+                                                    Lindhaya
+                                                    <br>
+                                                    <strong>Contact No :</strong>
+                                                    <a href="tel:+918682990222">8682990222</a>
+                    
+                                                </p>
+                                             </div>
+
+                                        </div>
+                                        <div class="modal-footer">
+                                            
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                          </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <section id="rules" class="sec1">
+        <div class="container">
+            <div class="headerText">
+                <h2 class="text-center">General Rules</h2>
+                <ol style="text-align: justify; font-size:20px; font-weight: 100;">
+                    <li>Selection of participants will be based on merit. Only limited entries for all the sports &games  and each institution can send only one team per event. </li>
+                    <li>Only regular bonafide UG & PG students are allowed to represent their college/university team. Age of the player should be below 23 years.</li>
+                    <li>Born on or after 01.07.1995  are eligible to play this tournament. Age proof is mandatory for participation of this tournament.</li>
+                    <li>Pre degree students and casual students are not allowed to participate in this tournament.</li>
+                    <li>All participants are requested to carry their college identity cards for all the games. Those failing to produce the ID cards will not be allowed to participate.</li>
+                    <li>Teams are requested to report half an hour before the scheduled commencement of the game. The participants should wear proper sports wears.</li>
+                    <li>Organising Secretary's decision will be final on all matters concerning the organization and  conduct of the tournament.</li>
+                    <li>Unfurnished accommodation will be provided for outstation teams on prior request only and Rs.200/- will be charged for food and accommodation per person per day (optional).</li>
+                    <li>In case of protest, the participant must submit necessary documents required for clarification.</li>
+                    <li>Cash prizes & certificates for first four places and trophies will be awarded for Winners and Runners only. The overall prize money awarded will be 5 lakhs.</li>
+                    <li>Balls shall be provided for Cricket, Table tennis, Squash, Tennis and Badminton.</li>
+                    <li>Online registration is also available at www.ssntrophy.com.</li>
+                    <li>The teams who receive confirmation email only are eligible to participate in the respective event.</li>
+                    <li>The entry form should reach on or before 15.02.2020</li>
+                </ol>
+                <div class="danger">
+                    <p><strong>Note:-</strong> If any team is found violating the rules, the whole institution will be disqualified and participation here in future will be discouraged. </p>
+                </div>
+                
+
+            </div>
+            <hr style="margin-top: 40px;  border-bottom: 1px solid whitesmoke;">
+            
+        </div>
+
+    </section>
+    
+    
+    <section>
+
+    </section>
+
+
+    <section>
+        
+        <div class="container">
+            <div class="headerText">
+                <h2 style="text-align: center;">Our Sponsers</h2>
+            </div>
+            <div class="jumbotron"  height=50px;>
+                <div class="flexc">
+                    <div >
+                        <img id="im" src="hcl.png" alt="" style="margin-top: 120px;">
+                    </div>
+                    
+                    <div>
+                        <img src="oil1.png" alt=""width="300" height="300">
+                    </div>
+
+                </div>
+                
+            
+            </div>
+
+        </div>
+    </section>
+    
+
+    <section id="venue">
+        <div class="container">
+            <div class="headerText text-center">
+                <h2 class="">Venue</h2>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3891.397662842401!2d80.19220161476822!3d12.75266729099982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52512e8ce7e36d%3A0xb66029eb662ff7e9!2sSports%20Complex-%20SSN%20College%20Of%20Engineering!5e0!3m2!1sen!2sin!4v1579279673696!5m2!1sen!2sin"  frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+        </div>
+
+
+    </section>
+
+    
+    
+    <section id="footer">
+		<div class="container">
+			<div class="row text-center text-xs-center text-sm-left text-md-left">
+                <div class="col-xs-6 col-sm-6 col-md-6">
+					<h5>Designed &amp; Developed by</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href=""><i class="fa fa-angle-double-right"></i>Kishore S M</a></li>
+						<li><a href=""><i class="fa fa-angle-double-right"></i>Mano Balaje S</a></li>
+                        <li><a href=""><i class="fa fa-angle-double-right"></i>Megavannan K</a></li>
+                        
+						
+					</ul>
+				</div>
+				<div class="col-xs-6 col-sm-6 col-md-6">
+					<h5>Quick links</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="#home"><i class="fa fa-angle-double-right"></i>Home</a></li>
+						<li><a href="#about"><i class="fa fa-angle-double-right"></i>About Us</a></li>
+						<li><a href="#games"><i class="fa fa-angle-double-right"></i>Games</a></li>
+						<li><a href="#rules"><i class="fa fa-angle-double-right"></i>Rules</a></li>
+						<li><a href="#venue"><i class="fa fa-angle-double-right"></i>Venue</a></li>
+					</ul>
+				</div>
+				
+				
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+					<ul class="list-unstyled list-inline social text-center">
+						<li class="list-inline-item"><a href=""><i class="fa fa-facebook"></i></a></li>
+						<li class="list-inline-item"><a href=""><i class="fa fa-twitter"></i></a></li>
+						<li class="list-inline-item"><a href=""><i class="fa fa-instagram"></i></a></li>
+						<li class="list-inline-item"><a href=""><i class="fa fa-google-plus"></i></a></li>
+						<li class="list-inline-item"><a href="" target="_blank"><i class="fa fa-envelope"></i></a></li>
+					</ul>
+				</div>
+				</hr>
+			</div>	
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-black">
+					
+					<p class="h6">&copy All right Reserved.<a class="text-green ml-2" href="http://www.ssn.edu.in/" target="_blank">ssn.edu.in</a></p>
+				</div>
+				</hr>
+			</div>	
+		</div>
+	</section>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+</script>>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).scroll(function(){
+            $('.navbar').toggleClass('Scrolled',$(this).scrollTop() > $('.navbar').height());
+        });
+    </script>
+</body>
+</html> 
