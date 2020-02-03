@@ -60,13 +60,32 @@ p{
     text-align: justify;
 }
 .banner{
-    top:0;
+   /* top:0;
     width: 100%;
     height: 100vh;
     background:url("6.jpg");
     background-size:cover;
     margin-bottom: 0%;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;*/
+    width: 100%;
+	height:100%;
+	overflow: hidden;
+	position: relative;
+	background-image: url(21.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	animation: slide 10s infinite;
+}
+@keyframes slide{
+	0%{
+		background-image: url(22.jpg);
+	}
+	33%{
+		background-image: url(23.jpg);
+	}
+	67%{
+		background-image: url(24.jpg);
+	}
 }
 
 .banner:before{
@@ -100,6 +119,15 @@ p{
 }
 .h100{
     height:100%;
+}
+
+.contentb{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-transform: uppercase;
+	text-align: center;
 }
 .contentBox
 {
@@ -289,11 +317,19 @@ p{
       
 @media screen and (max-width: 480px) {
     .banner{
-        top:0;
+       /* top:0;
         width: 100%;
         height: 100vh;
         background:url("7.jpg");
-        background-repeat: no-repeat;
+        background-repeat: no-repeat;*/
+    width: 100%;
+	height:100%;
+	/*overflow: hidden;*/
+	position: relative;
+    background-image: url(21.jpg);
+    
+	background-repeat: no-repeat;
+	animation: slide 10s infinite;
         
     }
 
